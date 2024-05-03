@@ -19,8 +19,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: python run command
-        setup-command: sudo -H pip3 install pytest
-        command: pytest --nbmake simple-linear-regression.ipynb
+        setup-command: sudo -H pip3 install pytest nbmake
+        command: pytest nbmake simple-linear-regression.ipynb
         timeout: 10
         max-score: 20
     - name: Autograding Reporter
