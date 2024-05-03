@@ -20,7 +20,7 @@ jobs:
       with:
         test-name: python run command
         setup-command: sudo -H pip3 install pytest nbmake
-        command: pytest nbmake simple-linear-regression.ipynb
+        command: pytest --nbmake simple-linear-regression.ipynb
         timeout: 10
         max-score: 20
     - name: Autograding Reporter
